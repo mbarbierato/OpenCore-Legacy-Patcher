@@ -155,7 +155,7 @@ class DetectRootPatch:
                         self.requires_root_kc = True
                 elif gpu.arch == device_probe.AMD.Archs.TeraScale_2:
                     if self.os_major > non_metal_os:
-                        self.amd_ts2 = True
+                        self.amd_ts2 = False
                         self.amfi_must_disable = True
                         if os_data.os_data.ventura in self.constants.legacy_accel_support:
                             self.amfi_shim_bins = True
